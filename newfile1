@@ -1,0 +1,15 @@
+#This is first python program on github
+#It generates the prime from 1 to n
+arr_prime=[2]       #Initialize array holding primes
+n=1000              #A value of n
+for i in range(3,n):
+  for a in arr_prime:
+    if i%a==0:
+      flag=0
+      break;
+    else:
+      flag=1
+      continue
+  if flag==1:
+    arr_prime.append(i)
+    print(i)
